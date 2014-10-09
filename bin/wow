@@ -4,8 +4,6 @@ process.title = 'wow';
 
 var path = require('path');
 
-console.log(path.resolve('.'));
-
 process.argv = [
     'node',
     'grunt',
@@ -13,10 +11,8 @@ process.argv = [
     '-b',
     '.',
     '--gruntfile',
-    path.resolve('.') + path.sep + 'Gruntfile.js'
+    path.resolve(__dirname, '../lib') + path.sep + 'Gruntfile.js'
 ];
-
-console.log(process.argv);
 
 // init Grunt task
 require('grunt').cli();
