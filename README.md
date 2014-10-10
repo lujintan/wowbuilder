@@ -4,7 +4,7 @@ wowbuilder
 ### Installation
 
 ```bash
-$ npm install -g express
+$ npm install -g wowbuilder
 ```
 
 ### Quick Start
