@@ -18,4 +18,4 @@ $ wow local
 $ wow server
 ```
     
-    Open browser, then visit the site [http://localhost:8888](http://localhost:8888)
+    Open browser, then visit the site [localhost:8888](http://localhost:8888)
