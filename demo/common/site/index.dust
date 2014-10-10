@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="renderer" content="webkit|ie-comp|ie-stand">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+        <title>测试 - 首页</title>
+
+        <link rel="stylesheet" type="text/css" href="../static/css/reset.less">
+        <link rel="stylesheet" type="text/css" href="../static/css/tools.less">
+        <link rel="stylesheet" type="text/css" href="../static/css/main.less">
+        <link rel="stylesheet" type="text/css" href="../static/css/header.less">
+
+        <script type="text/javascript">
+            // html5 标签在低端浏览器下的适配
+            (function(){
+                var ie = /msie (\d+\.\d+)/i.test(navigator.userAgent) ? 
+                    (document.documentMode || + RegExp['\x241']) : undefined;
+                if(ie && ie < 8){
+                    location.href = "http://developer.baidu.com/static/assets/sorry-for-ie.html";
+                }
+                if (ie && ie < 9){
+                    var e = [
+                        'abbr', 'article', 'aside', 'audio', 'canvas', 
+                        'datalist', 'details', 'dialog', 'eventsource', 
+                        'figure', 'footer', 'header', 'hgroup', 'mark', 
+                        'menu', 'meter', 'nav', 'output', 'progress', 
+                        'section', 'time', 'video'],
+                        i = e.length;
+                    while (i--) {
+                        document.createElement(e[i])
+                    }
+                }
+            })();
+        </script>
+    </head>
+    <body>
+        <header id="gHeader" class="g-hd clearfix">
+            <div class="mod-header">
+                <div class="head-info">
+                    <a class="qinglogo" href="/"></a>
+                    <div class="menu-list">
+                        <a href="/" class="item current">首页</a>
+                        <a href="/hexinnengli" class="item ">核心能力</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <nav id="gNav" class="g-nav clearfix"></nav>
+
+        <section id="gWrapper" class="g-wp">
+            <section id="gMain" class="g-ma clearfix">
+            </section>
+        </section>
+        <footer id="gFooter" class="g-ft clearfix"></footer>
+        
+        <script type="text/javascript" src="../static/js/base/require.js"></script>
+        <script type="text/javascript" src="../static/js/base/css.js"></script>
+        <script type="text/javascript" src="../static/js/base/jquery-1.10.1.js"></script>
+        <script type="text/javascript" src="../static/js/base/dust-core.js"></script>
+        <script type="text/javascript" src="../static/js/base/dust-helpers.js"></script>
+        <script type="text/javascript" src="../static/js/base/wowspg.js"></script>
+
+        <script type="text/javascript">
+            wow.init({
+                '.*': {
+                        block: {
+                            nav: {
+                                selector: '#gNav',
+                                deps: ['main', 'footer']
+                            },
+                            main: {
+                                selector: '#gMain'
+                            },
+                            footer: {
+                                selector: '#gFooter'
+                            }
+                        },
+                        router: {
+                            '/': {
+                                router: 'home/static/js/router'
+                            },
+                            'hexinnengli': {
+                                router: 'ability/static/js/router'
+                            }
+                        }
+                    }
+                }, {
+                    handler: {
+                        loading: function($wrap) {
+                            $wrap.html('');
+                        }
+                    }
+                });
+            $(window).bind('wow.pagechange', function(e, pageInfo){
+              var url = pageInfo.url,
+                $header = $('#gHeader'),
+                $doc = $(document.documentElement);
+              $header.find('.menu-list .item.current').removeClass('current');
+              if (url.indexOf('/hexinnengli') > -1){
+                $header.find('.menu-list .item[href="/hexinnengli"]').addClass('current');
+              }
+              else {
+                $header.find('.menu-list .item[href="/"]').addClass('current');
+              }
+            });
+        </script>
+
+    </body>
+</html>

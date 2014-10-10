@@ -1,0 +1,175 @@
+{
+  "id": "dev_v3_services",
+  "title": "轻应用平台",
+  "url": "/",
+  "banner": [
+    {
+      "image": "http://developer.baidu.com/static/assets/home-bannerbg.png",
+      "background-color": "#319BD8",
+      "background-image": "http://developer.baidu.com/static/assets/home-bannerbg1.png",
+      "top": {
+        "height": "150px"
+      },
+      "bottom": {
+        "height": "230px"
+      }
+    },
+    {
+      "image": "http://developer.baidu.com/static/assets/home-bianxianbg.png",
+      "background-image": "http://developer.baidu.com/static/assets/home-bianxianbg1.png",
+      "background-color": "#33D2B8",
+      "bounce": {
+        "pos": "right",
+        "width": "1200px"
+      }
+    },
+    {
+      "image": "http://developer.baidu.com/static/assets/home-fenfabg.png",
+      "background-color": "#339DDC",
+      "background-image": "http://developer.baidu.com/static/assets/home-fenfabg1.png",
+      "right": {
+        "width": "400px"
+      },
+      "left": {
+        "width": "800px"
+      }
+    }
+  ],
+  "events": {
+    "title": "活动",
+    "list": [
+      {
+        "date": "2014.08.02",
+        "end_date": "20140803",
+        "title": "百度轻应用Hackathon火热开启，2000万奖励等你拿！",
+        "sub_title": "2014.08.02 - 2014.08.03",
+        "new": true,
+        "hot": true,
+        "url": "http://developer.baidu.com/marketsupport/hackathon",
+        "new_window": true,
+        "image": "http://developer.baidu.com/static/assets/light-hackathon.png"
+      },
+      {
+        "date": "2014.07.18",
+        "end_date": "20140719",
+        "title": "百度·宝马车载轻应用编程马拉松大赛火热报名中",
+        "sub_title": "2014.07.18 - 2014.07.19",
+        "new": true,
+        "hot": true,
+        "url": "http://bmw.csdn.net",
+        "new_window": true,
+        "image": "http://developer.baidu.com/static/assets/20140710/lightapp-bwmhd.jpg"
+      },
+      {
+        "date": "2014.03.29",
+        "end_date": "20140329",
+        "title": "百度轻应用高级训练营[北京]",
+        "sub_title": "2014.03.29 - 2014.03.29",
+        "new": false,
+        "hot": false,
+        "url": "http://forum.cloudajs.org/forum.php?mod=viewthread&tid=102",
+        "new_window": true,
+        "image": "http://apps.bdimg.com/developer/static/12261449/assets/shalong.jpg"
+      },
+      {
+        "date": "2013.12.07",
+        "end_date": "20140118",
+        "title": "开发轻应用 幸福过大年",
+        "sub_title": "2013.12.07 - 2014.01.18",
+        "new": true,
+        "hot": false,
+        "url": "http://developer.baidu.com/marketsupport/light_salon",
+        "new_window": true,
+        "image": "http://apps.bdimg.com/developer/static/12261449/assets/v3/dev-center/dev-light.jpg"
+      },
+      {
+        "date": "2013.08.22",
+        "end_date": "20130822",
+        "title": "2013百度世界",
+        "sub_title": "2013.08.22 - 2013.08.22",
+        "new": true,
+        "hot": false,
+        "url": "http://baiduworld.baidu.com/",
+        "new_window": true,
+        "image": "http://apps.bdimg.com/developer/static/12261449/assets/v3/dev-center/baiduworld.png"
+      }
+    ]
+  },
+  "activities": {
+    "title": "动态",
+    "list": [
+      {
+        "image": "",
+        "title": "接入轻应用赢取BAE优惠券",
+        "date": "2014.03.20",
+        "new": true,
+        "hot": false,
+        "url": "http://godbae.duapp.com/?p=763",
+        "new_window": true
+      },
+      {
+        "image": "",
+        "title": "提交轻应用Sitemap强化移动搜索检索",
+        "date": "2014.03.12",
+        "new": true,
+        "hot": false,
+        "url": "http://hi.baidu.com/developerhome/item/d479101e54b633c05f53b180",
+        "new_window": true
+      },
+      {
+        "image": "",
+        "title": "BAE3.0正式开放",
+        "date": "2013.12.16",
+        "new": false,
+        "hot": false,
+        "url": "http://developer.baidu.com/wiki/index.php?title=docs/cplat/bae",
+        "new_window": true
+      },
+      {
+        "image": "",
+        "title": "云存储新版管理控制台正式上线",
+        "date": "2013.11.07",
+        "new": false,
+        "hot": false,
+        "url": "http://developer.baidu.com/wiki/index.php?title=docs/cplat/stor/console",
+        "new_window": true
+      },
+      {
+        "image": "",
+        "title": "SiteApp将提供默认访问地址",
+        "date": "2013.11.07",
+        "new": false,
+        "hot": false,
+        "url": "http://hi.baidu.com/tangtang_800/item/a9b202f66d310e3da7298857 ",
+        "new_window": true
+      },
+      {
+        "image": "",
+        "title": "媒体云语音识别服务正式上线",
+        "date": "2013.10.24",
+        "new": false,
+        "hot": false,
+        "url": "http://developer.baidu.com/wiki/index.php?title=docs/cplat/media/voice",
+        "new_window": true
+      },
+      {
+        "image": "",
+        "title": "SiteApp定制效果功能升级",
+        "date": "2013.10.17",
+        "new": false,
+        "hot": false,
+        "url": "http://hi.baidu.com/tangtang_800/item/a0e44a18473c487b2a3e22e2",
+        "new_window": true
+      },
+      {
+        "image": "",
+        "title": "媒体云人脸识别服务正式上线",
+        "date": "2013.10.12",
+        "new": false,
+        "hot": false,
+        "url": "http://developer.baidu.com/wiki/index.php?title=docs/cplat/media/face",
+        "new_window": true
+      }
+    ]
+  }
+}

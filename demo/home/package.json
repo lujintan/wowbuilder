@@ -1,0 +1,17 @@
+{
+    "name": "home",
+    "version": "0.1.0",
+    "wow": {
+        "name": "home",
+        "pack": {
+            "static/pkg/pkg.js": "static/**/*.{dust,js}"
+        },
+        "router": {
+            "/": {
+                "ds": "/static/1/community/light/config/home_data.json",
+                "tpl": "static/js/tpl/index.dust",
+                "title": "测试 - 首页"
+            }
+        }
+    }
+}

@@ -1,0 +1,55 @@
+{
+    "name": "common",
+    "version": "1.0.0",
+
+    "wow": {
+        "name": "common",
+        "path": "index",
+        "deps": ["home", "ability"],
+
+        "ds": {},
+
+        "pack": {},
+        "router": {},
+
+        "local": {
+            "tasks": {
+                "dusthtml": {
+                    "options": {
+                        "whitespace": true,
+                        "context": "./test/index.json"
+                    },
+                    "controller": "dusthtml",
+                    "files": [{
+                        "expand": true,
+                        "cwd": "./<%= output%>",
+                        "src": "site/**/*.dust",
+                        "dest": "./<%= output%>",
+                        "ext": ".html",
+                        "extDot": "last"
+                    }]
+                },
+                "replace:tplSepRemove": {
+                    "options": {
+                        "reg": {
+                            "\\{\\{[^\\{\\}]*\\}\\}": ""
+                        }
+                    },
+                    "files": [{
+                        "expand": true,
+                        "cwd": "./site",
+                        "src": "**/*.dust",
+                        "dest": "./<%= output%>/site/<%= moduleName%>"
+                    }]
+                },
+                "compilehtml": "dusthtml",
+                "buildstart": ["replace:tplSepRemove"]
+            }
+        },
+        "remote": {
+            "domain": {
+                "cdn": ""
+            }
+        }
+    }
+}

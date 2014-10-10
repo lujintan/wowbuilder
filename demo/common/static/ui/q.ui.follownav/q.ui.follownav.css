@@ -1,0 +1,12 @@
+.q-ui-follownav {
+    position: relative;
+}
+.q-ui-follownav .slider-arrow {
+    position: absolute;
+    display: block;
+    -webkit-transition: .3s left;
+    -moz-transition: .3s left;
+    -ms-transition: .3s left;
+    -o-transition: .3s left;
+    transition: .3s left;
+}

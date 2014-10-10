@@ -1,0 +1,16 @@
+{
+    "name": "ability",
+    "version": "0.1.0",
+    
+    "wow": {
+        "name": "ability",
+        "path": "hexinnengli",
+
+        "router": {
+            "hexinnengli/": {
+                "title": "测试 - 核心能力",
+                "tpl": "static/js/tpl/index.dust"
+            }
+        }
+    }
+}
