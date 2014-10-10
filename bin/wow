@@ -8,7 +8,7 @@ var aProcessArgs = process.argv,
     sArgTask = aProcessArgs[2],
     sArgAdded = aProcessArgs[3],
     objMapToGruntTask = {
-        server: 'devserver'
+        server: 'httpserver'
     };
 
 process.argv = [
