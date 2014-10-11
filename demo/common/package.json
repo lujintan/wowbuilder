@@ -9,7 +9,17 @@
 
         "ds": {},
 
-        "pack": {},
+        "pack": {
+            "static/pkg/pkg_common.js": [
+                "static/js/base/require.js",
+                "static/js/base/css.js",
+                "static/js/base/jquery-1.10.1.js",
+                "static/js/base/dust-core.js",
+                "static/js/base/dust-helpers.js",
+                "static/js/base/wowspg.js"
+            ]
+        },
+
         "router": {},
 
         "local": {

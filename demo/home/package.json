@@ -6,6 +6,11 @@
         "pack": {
             "static/pkg/pkg.js": "static/**/*.{dust,js}"
         },
+        "local": {
+            "ds": {
+                "/data/wasai": "/common/test/index.json"
+            }
+        },
         "router": {
             "/": {
                 "ds": "/static/1/community/light/config/home_data.json",
