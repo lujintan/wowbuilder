@@ -1,6 +1,6 @@
 {
   "name": "wowbuilder",
-  "version": "0.1.6",
+  "version": "0.1.8",
   "description": "wowbuilder to build a single page website by wowspg",
   "main": "wow.js",
   "scripts": {
