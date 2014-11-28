@@ -1,3 +1,0 @@
-{%block name="main"%}
-    {%block name="ability-main" class="mod-ability-content"%}{%/block%}
-{%/block%}

@@ -1,3 +1,0 @@
-{%block name="main"%}
-    {%block name="home-main" class="mod-home-content"%}{%/block%}
-{%/block%}
