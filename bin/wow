@@ -1,0 +1,26 @@
+#!/usr/bin/env node
+
+process.title = 'wow';
+
+var path = require('path');
+
+var aProcessArgs = process.argv,
+    sArgTask = aProcessArgs[2],
+    sArgAdded = aProcessArgs[3];
+
+if (sArgTask === 'server'){
+    sArgTask = 'wow-httpserver';
+}
+
+process.argv = [
+    'node',
+    'grunt',
+    sArgTask,
+    '-b',
+    '.',
+    '--gruntfile',
+    path.resolve(__dirname, '../src') + path.sep + 'Gruntfile.js'
+];
+
+// init Grunt task
+require('grunt').cli();
