@@ -1,0 +1,20 @@
+{%extend file="outer"%}
+
+{%block name="header-base"%}
+    jjjjjjjj
+    {%block name="header"%}{%/block%}
+{%/block%}
+
+{%block name="body-base"%}
+    bbb
+    {%block name="body"%}{%/block%}
+
+    ccc
+{%/block%}
+
+{%block name="footer-base"%}
+kkkkk
+    {%block name="footer"%}{%/block%}
+
+    jjjjjjj
+{%/block%}

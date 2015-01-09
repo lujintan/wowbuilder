@@ -1,0 +1,18 @@
+{%extend file="./layout.dust"%}
+
+{%title name="这个是什么啊。。。"%}
+
+{%block name="header-inner"%}
+    <datasource href="/wasai/xxx/ooo.json">
+    <link rel="stylesheet" href="./output/css/index.css">
+    this is header-inner
+    <script type="text/javascript" src="./output/js/index.js" handler="start"></script>
+{%/block%}
+
+{%block name="body-inner"%}
+    this is body-inner
+{%/block%}
+
+{%block name="footer"%}
+    this is footer
+{%/block%}

@@ -1,0 +1,14 @@
+{
+    "name": "wow-builder-test",
+    "description": "wow builder test",
+    "version": "1.0.1",
+    "author": [{
+        "name": "lujintan",
+        "mail": "lujintan@baidu.com"
+    }],
+    "router": {
+        "index": "./index.dust",
+        "pageb": "./pageb.dust",
+        "pageoo": "./pageoo.dust"
+    }
+}

@@ -1,0 +1,18 @@
+{%extend file="./layout_oo.dust"%}
+
+{%title name="这个是page_oo a"%}
+
+{%block name="header-inner"%}
+    <datasource href="/wasai/xxx/ooo.json">
+    <link rel="stylesheet" href="./output/css/index.css">
+    this is pageb header inner
+    <script type="text/javascript" src="./output/js/index.js" handler="start"></script>
+{%/block%}
+
+{%block name="body-inner"%}
+    this is pageb body inner
+{%/block%}
+
+{%block name="footer"%}
+    this is pageb footer inner
+{%/block%}
