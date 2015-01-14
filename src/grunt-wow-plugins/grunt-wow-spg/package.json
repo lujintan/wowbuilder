@@ -1,0 +1,27 @@
+{
+  "name": "grunt-wow-spg",
+  "version": "0.0.1",
+  "description": "compile wow templates",
+  "main": "tasks/wow-spg.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/cloud-fe/wowbuilder.git"
+  },
+  "keywords": [
+    "wowspg",
+    "wow"
+  ],
+  "auth": "yingxuetan",
+  "email": "yingxuetan@163.com",
+  "license": "https://github.com/cloud-fe/wowbuilder/blob/master/LICENSE",
+  "bugs": {
+    "url": "https://github.com/cloud-fe/wowbuilder/issues"
+  },
+  "homepage": "https://github.com/cloud-fe/wowbuilder",
+  "dependencies": {
+    "grunt": "~0.4.5",
+    "wowspg-builder": "*"
+  },
+  "readme": "wowbuilder\n==========\n",
+  "readmeFilename": "README.md"
+}

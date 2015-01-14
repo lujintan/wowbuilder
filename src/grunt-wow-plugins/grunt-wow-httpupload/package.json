@@ -1,0 +1,27 @@
+{
+  "name": "grunt-wow-httpupload",
+  "version": "0.0.1",
+  "description": "upload files to the remote server",
+  "main": "tasks/wow-httpupload.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/cloud-fe/wowbuilder.git"
+  },
+  "keywords": [
+    "upload",
+    "http"
+  ],
+  "auth": "yingxuetan",
+  "email": "yingxuetan@163.com",
+  "license": "https://github.com/cloud-fe/wowbuilder/blob/master/LICENSE",
+  "bugs": {
+    "url": "https://github.com/cloud-fe/wowbuilder/issues"
+  },
+  "homepage": "https://github.com/cloud-fe/wowbuilder",
+  "dependencies": {
+    "grunt": "~0.4.5",
+    "restler": "3.2.2"
+  },
+  "readme": "wowbuilder\n==========\n",
+  "readmeFilename": "README.md"
+}
