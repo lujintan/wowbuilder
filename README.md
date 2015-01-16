@@ -22,7 +22,7 @@ $ npm install -g wowbuilder
 
 ##使用指南
 
-###第一步，根据wowstyleguide搭建基础的模块架构文件，配置package.json文件
+###第一步，根据[wowstyleguide](https://github.com/cloud-fe/wowstyleguide)搭建基础的模块架构文件，配置package.json文件
 
 ```javascript
 {
