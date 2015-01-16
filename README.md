@@ -101,7 +101,7 @@ $ wow remote
 $ wow online
 ```
 
-* 运行wow 命令名，命令名为package.json 中配置的命令
+* 运行wow + 命令名，命令名为package.json 中配置的命令
 
 ###第三步，启动本地server测试
 
