@@ -102,7 +102,7 @@ $ wow server
 
 <table>
     <tr>
-        <td>关键字</td><td>含义</td><td>属性</td>
+        <td>关键字</td><td>含义</td>
     </tr>
     <tr>
         <td>name</td><td>模块名</td>
