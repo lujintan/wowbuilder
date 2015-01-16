@@ -100,6 +100,139 @@ $ wow server
 
 ## package.json说明
 
+<table>
+    <tr>
+        <td>关键字</td><td>含义</td><td>属性</td>
+    </tr>
+    <tr>
+        <td>name</td><td>模块名</td>
+    </tr>
+    <tr>
+        <td>path</td><td>部署路径，默认与name同名</td>
+    </tr>
+    <tr>
+        <td>deps</td><td>依赖的模块</td>
+    </tr>
+    <tr>
+        <td>pack</td><td>打包配置</td>
+    </tr>
+    <tr>
+        <td>tasks</td><td>任务配置</td>
+    </tr>
+    <tr>
+        <td>router</td><td>路由正则到模板的映射</td>
+    </tr>
+    <tr>
+        <td>entrance</td><td>入口文件</td>
+    </tr>
+    <tr>
+        <td>rewrite</td><td>本地测试的rewrite规则</td>
+    </tr>
+</table>
+
+## 前端模板编译语法说明
+
+<table>
+    <tr>
+        <td>关键字</td><td>含义</td><td>属性</td>
+    </tr>
+    <tr>
+        <td>block</td><td>页面片段的定义</td><td>name: block 名字<br>tag: block最外层标签<br>sync: 是否为同步模板</td>
+    </tr>
+    <tr>
+        <td>extend</td><td>模板继承</td><td>file: 父级模板path</td>
+    </tr>
+    <tr>
+        <td>title</td><td>页面标题</td><td>name: 页面标题内容</td>
+    </tr>
+    <tr>
+        <td>spgmain</td><td>单页面配置导入位置</td><td>var: 单页配置导入到的变量名称</td>
+    </tr>
+</table>
+
+block标签内部，标签使用说明：
+<table>
+    <tr>
+        <td>标签名</td><td>含义</td><td>属性</td>
+    </tr>
+    <tr>
+        <td>datasource</td><td>block数据源</td><td>href: 数据源url</td>
+    </tr>
+    <tr>
+        <td>link</td><td>样式表，可直接使用.less</td><td>href: 样式表path</td>
+    </tr>
+    <tr>
+        <td>script</td><td>页面脚本文件</td><td>src: 脚本path<br>handler: dt|start|ready|usable 表示处理器的类型</td>
+    </tr>
+</table>
+
+例：
+
+配置文件的router配置：
+
+```javascript
+"router": {
+    "/aaa": "aaa/src/dust/index.dust"
+}
+```
+
+模板文件：
+
+```javascript
+    //layout.dust文件
+    //outer表示，父级模板不在当前模板
+    {%extend name="outer"%}
+    {%block name="main"%}
+        {%block name="service-main" class="m-service-index-wp yh"%}{%/block%}
+    {%/block%}
+    
+    //index.dust文件
+    {%extend file="aaa/src/dust/layout.dust"%}
+    {%block name="aaa-main" class="m-aaa-index-wp"%}
+        <datasource href="/aaa/bbb/data">
+        <link rel="stylesheet" type="text/css" href="aaa/src/less/index.less">
+        <script type="text/javascript" src="aaa/src/js/handler/index.js"></script>
+    {%/block%}
+```
+
+编译后产出配置文件：
+
+```javascript
+define(function () {
+    return {
+        "block": {
+            "main": {
+                "block": {
+                    "aaa-main": {
+                        "tpl": "",
+                        "sync": "no",
+                        "handler": {},
+                        "selector": "#wowBlockaaa-main1"
+                    }
+                },
+                "tpl": "aaa/src/dust/wow_block_layout_main2",
+                "sync": "no",
+                "handler": {}
+            }
+        },
+        "router": {
+            "/aaa": {
+                "block": {
+                    "aaa-main": {
+                        "tpl": "aaa/src/dust/wow_block_index_service-main0",
+                        "css": ["aaa/src/less/index"],
+                        "ds": "/static/1/community/light/config/service_index.json",
+                        "sync": "no",
+                        "handler": {
+                            "ready": ["aaa/src/js/handler/index"]
+                        }
+                    }
+                }
+            }
+        }
+    };
+});
+```
 ## 目前集成的功能列表
 
 <table>
