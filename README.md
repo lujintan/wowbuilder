@@ -1,6 +1,19 @@
 wowbuilder
 ==========
 
+##关于wowbuilder
+
+### wow单页系统简介
+wow单页系统可以帮助开发者快速搭建一套前端单页面应用，wow框架主要包含：
+
+* wowspg — 前端Javascript单页面框架，单页面应用前端基础库
+* wowui — 前端基础样式库
+* [wowbuilder](https://github.com/cloud-fe/wowbuilder) — 单页面框架自动化编译工具，前端人员可以按照传统方式进行开发，由wowbuilder编译成为单页面，同时支持打包、压缩、本地测试等前端开发相关工具
+* [wowstyleguide](https://github.com/cloud-fe/wowstyleguide) — wow框架代码开发规范
+
+### wowbuiler概述
+wowbuilder作为wow系统的前端自动化工具，帮助开发者完成单页应用搭建、自动化编译打包、本地测试等功能。wowbuilder源码基于node编写，运行在装有node的运行环境中。
+
 ## 安装
 
 ```bash
